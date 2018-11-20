@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- 뭘까 -->
+    <title>Stack Multipurpose HTML Template22</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타데이터? -->
+    <meta name="description" content="Site Description Here">
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- 주소가 이렇게 되는게 맞음? type 리소스 유형-->
+    <link href="./css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
+        rel="stylesheet">
+        <!-- 이 홈페이지에있는 폰트를 가져와서 쓰는거? -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    /* 이렇게 쓰는거 맞음? */
+.input{
+    height: 300px;
+}
+</style>
+<body>
+    <form method="post" action="/writing">
+        <!-- <form method="post" action="/writing"> -->
+        <!-- 이게 무슨 post누르면 form테그안에 내용을 어디 담아서 다 보내는 거랬는데..
+        포스트 요청 동작 순서가 궁금하다. -->
+        <div class="form-group">
+            <label for="formGroupExampleInput">제목</label>
+            <!--뭐간 분류하는 테그같은데 for=~는 뭘까-->
+            <input name="title" type="text" class="form-control" id="title" placeholder="제목을 입력하세요">
+            <!-- name은 지정해서 어디쓰지? type은 꼭 지정해 줘야하나? -->
+        </div>
+        <div class="form-group input">
+            <label for="formGroupExampleInput2">내용</label>
+            <textarea  name="contents" type="text" rows="10" class="form-control" id="contents" placeholder="내용을 입력하세요"></textarea>
+        </div>
+        <div style="text-align: right">
+            <button type="submit" class="btn btn--primary type--uppercase" style="width:10% ;margin-right: 5%;margin-top: 2%">완료</button>
+            <!-- type이 제출?? -->
+        </div>
+    </form>
+</body>
+
+</html>
